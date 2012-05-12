@@ -1380,6 +1380,7 @@ class MutexBase {
 # define GTEST_DECLARE_STATIC_MUTEX_(mutex) \
     extern ::testing::internal::MutexBase mutex
 
+#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
 // Defines and statically (i.e. at link time) initializes a static mutex.
 // The initialization list here does not explicitly initialize each field,
 // instead relying on default initialization for the unspecified fields. In
