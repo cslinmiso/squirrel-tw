@@ -3,7 +3,7 @@
 
 config_version: "0.20"
 
-us_keyboard_layout: false
+us_keyboard_layout: true
 
 # for veteran chord-typist
 chord_duration: 0.1  # seconds
@@ -14,18 +14,18 @@ show_notifications_when: appropriate
 # Show notifications via Notification Center instead of Growl.
 # (Only valid if OS version is at least 10.8 and
 #  'show_notifications_when' is NOT set to 'never'.)
-show_notifications_via_notification_center: false
+show_notifications_via_notification_center: true
 
 style:
-  color_scheme: native
-  horizontal: false
+  color_scheme: google
+  horizontal: true
   corner_radius: 10
   border_height: 0
   border_width: 0
   line_spacing: 1
   #candidate_format: '%c. %@ '
-  #font_face: 'Heiti TC'
-  #font_point: 21
+  font_face: "Heiti TC Light"
+  #font_point: 20
   #label_font_face: 'STHeitiTC-Medium'
   #label_font_point: 18
   #label_color: 0x888888
@@ -139,26 +139,34 @@ preset_color_schemes:
 app_options:
   com.alfredapp.Alfred:
     ascii_mode: true
-  com.runningwithcrayons.Alfred-2:
+  com.apple.dt.Xcode:
     ascii_mode: true
-  com.blacktree.Quicksilver:
+  com.apple.Xcode:
+    ascii_mode: true
+  com.sublimetext.2:
     ascii_mode: true
   com.apple.Terminal:
     ascii_mode: true
     soft_cursor: true
+  com.panic.Coda2:
+    ascii_mode: true
+  com.apple.finder:
+    ascii_mode: true
+  com.blacktree.Quicksilver:
+    ascii_mode: true
   com.googlecode.iterm2:
     ascii_mode: true
   org.vim.MacVim:
     ascii_mode: true
-  #com.apple.dt.Xcode:
-  #  ascii_mode: true
-  #com.barebones.textwrangler:
-  #  ascii_mode: true
-  #com.macromates.TextMate.preview:
-  #  ascii_mode: true
-  #com.sublimetext.2:
-  #  ascii_mode: true
-  #org.gnu.Aquamacs:
-  #  ascii_mode: true
-  #org.gnu.Emacs:
-  #  ascii_mode: true
+  com.apple.systemuiserver: #spotlight(頂部選單的appid)
+    ascii_mode: true
+  com.runningwithcrayons.Alfred-2:
+    ascii_mode: true
+  com.googlecode.iterm2:
+    ascii_mode: true
+  org.vim.MacVim:
+    ascii_mode: true
+  org.gnu.Aquamacs:
+    ascii_mode: true
+  org.gnu.Emacs:
+    ascii_mode: true
