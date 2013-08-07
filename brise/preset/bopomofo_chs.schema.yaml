@@ -2,9 +2,9 @@
 # encoding: utf-8
 
 schema:
-  schema_id: bopomofo
-  name: 正體
-  version: "1.3"
+  schema_id: bopomofo_chs
+  name: 簡體
+  version: "0.1"
   author:
     - 佛振 <chen.sst@gmail.com>
     - turtleknight <stk.chen@gmail.com>
@@ -19,19 +19,12 @@ schema:
     刪除不常用的半形全形切換功能、中文英文切換功能（在osx內用CapsLocl執行）。
     修改符號輸入，讓打字更為流暢
 
-switches: #正體模式
-  - name: zh_tw
+switches: #簡體模式
+  - name: zh
     reset: 1 # 啓用opencc字形轉換
 simplifier:
-  opencc_config: zht2zhtw_v.ini # opencc設定檔，位於/Library/Input Methods/Squirrel.app/Contents/SharedSupport/opencc
-  option_name: zh_tw
-
-#switches: #簡體模式
-#  - name: zh
-#    reset: 1 # 啓用opencc字形轉換
-#simplifier:
-#  opencc_config: zht2zhs.ini # opencc設定檔，位於/Library/Input Methods/Squirrel.app/Contents/SharedSupport/opencc
-#  option_name: zh
+  opencc_config: zht2zhs.ini # opencc設定檔，位於/Library/Input Methods/Squirrel.app/Contents/SharedSupport/opencc
+  option_name: zh
 
 engine:
   processors:
@@ -97,7 +90,7 @@ speller:
 
 translator:
   dictionary: terra_pinyin
-  prism: bopomofo
+  prism: bopomofo_chs
   preedit_format:
     - "xlit|1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/- 6347'|ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄧㄨㄩㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦˉˊˇˋ˙ |"
 
