@@ -1,0 +1,25 @@
+RIME_ROOT = $(CURDIR)
+THIRDPARTY_PATHS = -DCMAKE_INCLUDE_PATH="$(RIME_ROOT)/thirdparty/include" -DCMAKE_LIBRARY_PATH="$(RIME_ROOT)/thirdparty/lib"
+
+.PHONY: all release debug clean thirdparty
+
+all: release
+
+release:
+	mkdir -p xbuild
+	cd xbuild; cmake -G Xcode .. -DBUILD_STATIC=ON -DCMAKE_BUILD_WITH_INSTALL_RPATH=ON $(THIRDPARTY_PATHS)
+	cd xbuild; xcodebuild -project rime.xcodeproj -configuration Release build | grep -v setenv | tee build.log
+
+debug:
+	mkdir -p xdebug
+	cd xdebug; cmake -G Xcode .. -DBUILD_STATIC=ON $(THIRDPARTY_PATHS) -DBUILD_TEST=ON
+	cd xdebug; xcodebuild -project rime.xcodeproj -configuration Debug build | grep -v setenv | tee build.log
+	@echo 'built librime for testing and debugging with command line tools.'
+
+clean:
+	rm -rf xbuild
+	rm -rf xdebug
+	rm build.log
+
+thirdparty:
+	make -f Makefile.thirdparty
