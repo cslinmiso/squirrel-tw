@@ -35,7 +35,6 @@
 		4495EA3A162E63A600F236CA /* soutzoe.dict.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 4495EA36162E637B00F236CA /* soutzoe.dict.yaml */; };
 		4495EA3B162E63A600F236CA /* soutzoe.schema.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 4495EA37162E637B00F236CA /* soutzoe.schema.yaml */; };
 		44ABBE7014DD5A2100B8A82D /* default.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44ABBE6314DD59EA00B8A82D /* default.yaml */; };
-		44ABBE7114DD5A2700B8A82D /* essay.kct in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44DA7A2714DD596700C1ED3B /* essay.kct */; };
 		44ABBE7214DD5A4000B8A82D /* cangjie5.dict.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44DA7A2914DD596700C1ED3B /* cangjie5.dict.yaml */; };
 		44ABBE7314DD5A4000B8A82D /* cangjie5.schema.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44DA7A2A14DD596700C1ED3B /* cangjie5.schema.yaml */; };
 		44ABBE7514DD5A4000B8A82D /* luna_pinyin.dict.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44DA7A2C14DD596700C1ED3B /* luna_pinyin.dict.yaml */; };
@@ -53,13 +52,10 @@
 		44B4F79E15A929E4009DFF5D /* wubi_pinyin.schema.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44B4F79715A929E4009DFF5D /* wubi_pinyin.schema.yaml */; };
 		44B4F79F15A929E4009DFF5D /* zyenpheng.dict.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44B4F79815A929E4009DFF5D /* zyenpheng.dict.yaml */; };
 		44B4F7A015A929E4009DFF5D /* zyenpheng.schema.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44B4F79915A929E4009DFF5D /* zyenpheng.schema.yaml */; };
-		44CD640C15E2646B0021234E /* librime.dylib in Copy 3rd-party Frameworks */ = {isa = PBXBuildFile; fileRef = 44CD640915E2633D0021234E /* librime.dylib */; };
 		44CDB5451780AB38008930FB /* sampheng.schema.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44CDB5431780AA95008930FB /* sampheng.schema.yaml */; };
 		44D3E63C16B6BFAE00D2E12B /* symbols.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44D3E63616B6BF4200D2E12B /* symbols.yaml */; };
 		44D3E63D16B6BFAE00D2E12B /* cangjie5_express.schema.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44D3E63A16B6BF7300D2E12B /* cangjie5_express.schema.yaml */; };
 		44D3E63E16B6BFAE00D2E12B /* combo_pinyin.schema.yaml in Copy Shared Support Files */ = {isa = PBXBuildFile; fileRef = 44D3E63816B6BF6100D2E12B /* combo_pinyin.schema.yaml */; };
-		44E21A9016A653E700C2B08F /* rime_deployer in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44E21A8E16A653E700C2B08F /* rime_deployer */; };
-		44E21A9116A653E700C2B08F /* rime_dict_manager in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44E21A8F16A653E700C2B08F /* rime_dict_manager */; };
 		44E8CD99166B8542002C8EE3 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E8CD98166B8542002C8EE3 /* Growl.framework */; };
 		44E8CD9A166B857F002C8EE3 /* Growl.framework in Copy 3rd-party Frameworks */ = {isa = PBXBuildFile; fileRef = 44E8CD98166B8542002C8EE3 /* Growl.framework */; };
 		44E98EC314AE1AC900847AD6 /* utf8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44E98EC214AE1AC900847AD6 /* utf8.cpp */; };
@@ -114,7 +110,6 @@
 				44B20C991600874800A85924 /* emoji.schema.yaml in Copy Shared Support Files */,
 				442B5B881570C37200370DEA /* squirrel.yaml in Copy Shared Support Files */,
 				44ABBE7014DD5A2100B8A82D /* default.yaml in Copy Shared Support Files */,
-				44ABBE7114DD5A2700B8A82D /* essay.kct in Copy Shared Support Files */,
 				4426D360150290CF009100C7 /* bopomofo.schema.yaml in Copy Shared Support Files */,
 				44ABBE7214DD5A4000B8A82D /* cangjie5.dict.yaml in Copy Shared Support Files */,
 				44ABBE7314DD5A4000B8A82D /* cangjie5.schema.yaml in Copy Shared Support Files */,
@@ -157,8 +152,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				44E21A9016A653E700C2B08F /* rime_deployer in CopyFiles */,
-				44E21A9116A653E700C2B08F /* rime_dict_manager in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +161,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				44CD640C15E2646B0021234E /* librime.dylib in Copy 3rd-party Frameworks */,
 				44E8CD9A166B857F002C8EE3 /* Growl.framework in Copy 3rd-party Frameworks */,
 				44F01493152AF6AF00EFDAC3 /* Sparkle.framework in Copy 3rd-party Frameworks */,
 			);
@@ -227,14 +219,12 @@
 		44B4F79715A929E4009DFF5D /* wubi_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wubi_pinyin.schema.yaml; sourceTree = "<group>"; };
 		44B4F79815A929E4009DFF5D /* zyenpheng.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zyenpheng.dict.yaml; sourceTree = "<group>"; };
 		44B4F79915A929E4009DFF5D /* zyenpheng.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zyenpheng.schema.yaml; sourceTree = "<group>"; };
-		44CD640915E2633D0021234E /* librime.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librime.dylib; path = librime/xbuild/lib/Release/librime.dylib; sourceTree = "<group>"; };
 		44CDB5431780AA95008930FB /* sampheng.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampheng.schema.yaml; sourceTree = "<group>"; };
 		44D3E63616B6BF4200D2E12B /* symbols.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = symbols.yaml; path = brise/symbols.yaml; sourceTree = "<group>"; };
 		44D3E63816B6BF6100D2E12B /* combo_pinyin.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = combo_pinyin.schema.yaml; sourceTree = "<group>"; };
 		44D3E63A16B6BF7300D2E12B /* cangjie5_express.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5_express.schema.yaml; sourceTree = "<group>"; };
 		44DA191A152B8CB600FB8EF0 /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = zh_CN; path = zh_CN.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		44DA191B152B8CBC00FB8EF0 /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = zh_TW; path = zh_TW.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		44DA7A2714DD596700C1ED3B /* essay.kct */ = {isa = PBXFileReference; lastKnownFileType = file; name = essay.kct; path = brise/essay.kct; sourceTree = SOURCE_ROOT; };
 		44DA7A2914DD596700C1ED3B /* cangjie5.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5.dict.yaml; sourceTree = "<group>"; };
 		44DA7A2A14DD596700C1ED3B /* cangjie5.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cangjie5.schema.yaml; sourceTree = "<group>"; };
 		44DA7A2C14DD596700C1ED3B /* luna_pinyin.dict.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin.dict.yaml; sourceTree = "<group>"; };
@@ -242,8 +232,6 @@
 		44DA7A2E14DD596700C1ED3B /* luna_pinyin_fluency.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_fluency.schema.yaml; sourceTree = "<group>"; };
 		44DA7A2F14DD596700C1ED3B /* luna_pinyin_simp.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_simp.schema.yaml; sourceTree = "<group>"; };
 		44DA7A3014DD596700C1ED3B /* luna_pinyin_tw.schema.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = luna_pinyin_tw.schema.yaml; sourceTree = "<group>"; };
-		44E21A8E16A653E700C2B08F /* rime_deployer */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = rime_deployer; path = librime/xbuild/bin/Release/rime_deployer; sourceTree = "<group>"; };
-		44E21A8F16A653E700C2B08F /* rime_dict_manager */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = rime_dict_manager; path = librime/xbuild/bin/Release/rime_dict_manager; sourceTree = "<group>"; };
 		44E8CD98166B8542002C8EE3 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		44E98EA514AE16DD00847AD6 /* checked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checked.h; sourceTree = "<group>"; };
 		44E98EA614AE16DD00847AD6 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
@@ -312,7 +300,6 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				44CD640915E2633D0021234E /* librime.dylib */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				44E8CD98166B8542002C8EE3 /* Growl.framework */,
 				44F01492152AF6AF00EFDAC3 /* Sparkle.framework */,
@@ -342,8 +329,6 @@
 		29B97314FDCFA39411CA2CEA /* Squirrel */ = {
 			isa = PBXGroup;
 			children = (
-				44E21A8E16A653E700C2B08F /* rime_deployer */,
-				44E21A8F16A653E700C2B08F /* rime_dict_manager */,
 				44DA7A4214DD598900C1ED3B /* SharedSupport */,
 				080E96DDFE201D6D7F000001 /* Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -455,7 +440,6 @@
 				442B5B871570C37200370DEA /* squirrel.yaml */,
 				4407F39D14EC071E001329FE /* opencc */,
 				44ABBE6314DD59EA00B8A82D /* default.yaml */,
-				44DA7A2714DD596700C1ED3B /* essay.kct */,
 				44DA7A2814DD596700C1ED3B /* preset */,
 				44935C0114F052EC00346874 /* supplement */,
 			);
@@ -604,7 +588,8 @@
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
-					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)\"/librime/build/lib",
+					"\"$(SRCROOT)\"/librime/build/bin",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)\"";
@@ -614,8 +599,9 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "\"/Library/Input Methods\"";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"\"$(SRCROOT)\"/librime/build/lib",
+					"\"$(SRCROOT)\"/librime/build/bin",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DLEOPARD",
@@ -643,7 +629,8 @@
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
-					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)\"/librime/build/lib",
+					"\"$(SRCROOT)\"/librime/build/bin",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)\"";
@@ -652,8 +639,9 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "\"/Library/Input Methods\"";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"\"$(SRCROOT)\"/librime/build/lib",
+					"\"$(SRCROOT)\"/librime/build/bin",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DLEOPARD",
